@@ -108,15 +108,15 @@
         <h2>Contacto</h2>
         <form>
           <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Nombres"/><br />
+          <input type="text" id="name" name="name" placeholder="Nombres" pattern="[a-zA-Z]+[ ][a-zA-Z]+" minlength="4" maxlength="12" required/><br />
           <label for="lname"></label>
-          <input type="text" id="lname" name="lname" placeholder="Apellidos"/><br />
+          <input type="text" id="lname" name="lname" placeholder="Apellidos" pattern="[a-zA-Z]+[ ][a-zA-Z]+" minlength="4" maxlength="20" required/><br />
           <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Email" /><br />
+          <input type="email" id="email" name="email" placeholder="Email" required/><br />
           <label for="phnumber"></label>
-          <input type="text" id="phnumber" name="phnumber" placeholder="Teléfono"/><br />
+          <input type="text" id="phnumber" name="phnumber" placeholder="Teléfono" required/><br />
           <label for="comments"></label>
-          <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Descripcion"></textarea>
+          <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Descripcion" required></textarea>
         </form>
         <button>ENVIAR</button>
       </section>
