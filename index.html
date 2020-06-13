@@ -119,7 +119,7 @@
       </section>
       <section>
         <h2>Contacto</h2>
-        <form>
+        <form method="GET">
           <label for="name"></label>
           <input type="text" id="name" name="name" placeholder="Nombres" pattern="[a-zA-Z]+[ ][a-zA-Z]+" minlength="4" maxlength="12" required/><br />
           <label for="lname"></label>
@@ -130,8 +130,9 @@
           <input type="text" id="phnumber" name="phnumber" placeholder="Teléfono" required/><br />
           <label for="comments"></label>
           <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Descripcion" required></textarea>
+          <br>
+          <button>Enviar</button>
         </form>
-        <button>ENVIAR</button>
       </section>
     </main>
   </body>
